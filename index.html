@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Christmas Comfort Mockup</title>
+<style>
+:root{--orange:#E6893C;--green:#1E4D3A;--cranberry:#8E1B2E;--cream:#FFF4E6;--ink:#2B2826;--muted:#6B6460}
+*{box-sizing:border-box}
+body{margin:0;background:#F3EFEA;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);font-size:15px;line-height:1.55}
+.lp{max-width:760px;margin:24px auto;background:#FFFFFF;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.nav{display:flex;align-items:center;padding:10px 20px;background:var(--orange);position:relative;overflow:hidden;height:56px}
+.stripes{position:absolute;right:0;top:0;height:56px}
+.logo{width:34px;height:34px;border:1px dashed #FFFFFF;border-radius:4px;color:#FFFFFF;font-size:10px;display:flex;align-items:center;justify-content:center}
+.hero{background:var(--cream);padding:32px 28px 26px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.eyebrow{font-size:13px;color:var(--cranberry);font-weight:600;letter-spacing:.04em;margin-bottom:6px}
+h1{color:var(--green);font-size:28px;line-height:1.25;font-weight:600;margin:0 0 10px}
+h2{color:var(--green);font-size:20px;font-weight:600;margin:0 0 4px}
+.photo{width:210px;flex-shrink:0;margin:0 auto}
+.photo .ph{height:200px;border:3px solid var(--green);border-radius:8px;background:#E9EEEC;display:flex;align-items:center;justify-content:center;color:var(--green);font-size:13px}
+.cap{font-size:13px;font-style:italic;color:var(--muted);margin-top:6px;text-align:center}
+.sec{padding:26px 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+.amt{border:1.5px solid var(--green);background:#FFFFFF;color:var(--green);border-radius:8px;padding:12px 10px;text-align:left;cursor:pointer;font:inherit;font-size:13px;line-height:1.35;position:relative}
+.amt b{font-size:18px;font-weight:600;display:block}
+.amt.on{background:var(--green);color:#FFFFFF}
+.tag{position:absolute;top:-10px;right:8px;background:var(--cranberry);color:#FFFFFF;font-size:11px;padding:1px 9px;border-radius:10px}
+#desc{background:var(--cream);border-radius:8px;padding:12px 14px;margin-top:14px;font-size:14px}
+.repeat{display:flex;gap:8px;align-items:center;margin-top:14px;font-size:14px;cursor:pointer}
+.cta{width:100%;background:var(--cranberry);color:#FFFFFF;border:none;border-radius:8px;padding:14px;font:inherit;font-size:17px;font-weight:600;cursor:pointer;margin-top:14px}
+.note{text-align:center;font-size:12px;color:var(--muted);margin-top:6px}
+.about{background:var(--green);color:#FFFFFF;display:flex;gap:24px;flex-wrap:wrap}
+.about h3{font-size:15px;color:#FFC845;margin:0 0 4px}
+.about div{flex:1;min-width:220px;font-size:14px}
+footer{background:var(--orange);color:#FFFFFF;font-size:12px;padding:12px 28px;text-align:center}
+@media (max-width:520px){.lp{margin:0;border-radius:0}.hero,.sec{padding-left:16px;padding-right:16px}h1{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="lp">
+  <div class="nav">
+    <svg class="stripes" width="170" height="56" viewBox="0 0 170 56" aria-hidden="true">
+      <polygon points="20,56 38,0 52,0 34,56" fill="#8E1B2E"/><polygon points="34,56 52,0 58,0 40,56" fill="#FFF4E6"/>
+      <polygon points="40,56 58,0 72,0 54,56" fill="#1E4D3A"/><polygon points="54,56 72,0 78,0 60,56" fill="#FFF4E6"/>
+      <polygon points="60,56 78,0 92,0 74,56" fill="#8E1B2E"/><polygon points="74,56 92,0 98,0 80,56" fill="#FFF4E6"/>
+      <polygon points="80,56 98,0 112,0 94,56" fill="#1E4D3A"/><polygon points="94,56 112,0 118,0 100,56" fill="#FFF4E6"/>
+      <polygon points="100,56 118,0 170,0 170,56" fill="#8E1B2E"/>
+    </svg>
+    <div style="display:flex;align-items:center;gap:10px;position:relative">
+      <div class="logo">Logo</div><span style="color:#FFFFFF;font-weight:600">[Organization name]</span>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div style="flex:1;min-width:240px">
+      <div class="eyebrow">A LITTLE CHRISTMAS COMFORT</div>
+      <h1>This Christmas, a little kindness can bring a lot of comfort.</h1>
+      <p style="margin:0">A soft blanket. A comfortable bed. A toy that turns any moment into playtime. Your gift brings these everyday comforts to homeless cats while they wait for their families.</p>
+    </div>
+    <div class="photo">
+      <div class="ph">Milo's photo</div>
+      <div class="cap">Milo, the day he arrived</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2>Choose your Christmas gift</h2>
+    <div style="color:var(--muted);font-size:13px;margin-bottom:16px">Each amount is a one-time gift. Any amount is warmly appreciated.</div>
+    <div class="grid">
+      <button class="amt" data-v="10.95"><b>$10.95</b>A little coziness</button>
+      <button class="amt" data-v="18.25"><b>$18.25</b>A comfortable place to rest</button>
+      <button class="amt on" data-v="36.50"><span class="tag">Suggested</span><b>$36.50</b>A little extra Christmas comfort</button>
+      <button class="amt" data-v="100"><b>$100</b>Comfort and care</button>
+      <button class="amt" data-v="200"><b>$200</b>A healthy start for the new year</button>
+      <button class="amt" data-v="other"><b>Other</b>Choose your own amount</button>
+    </div>
+    <div id="desc"></div>
+    <label class="repeat"><input type="checkbox" style="accent-color:#1E4D3A"> <span><b>Make this a Christmas tradition.</b> Repeat my gift automatically each year.</span></label>
+    <button class="cta" id="cta">Give $36.50 today</button>
+    <div class="note">Concept mockup only. No payment is collected.</div>
+  </div>
+
+  <div class="sec" style="border-top:1px solid #EEE6DC">
+    <h2 style="margin-bottom:8px">Milo's story</h2>
+    <p style="margin:0">Milo was found last winter curled up beneath a park bench on a freezing December night, underweight and with an injured paw. Our team warmed him up and treated his paw. At first he hid in the back of his kennel, until someone gave him a soft blanket of his own. Little by little, he came forward. This Christmas, Milo is sleeping by the fire in his new home, and his blanket went with him.</p>
+  </div>
+
+  <div class="sec about">
+    <div><h3>About us</h3>Caring for animals since 1984, from a sanctuary in a red-rock canyon in southern Utah, home to dogs, cats, rabbits, horses and more.</div>
+    <div><h3>Across the U.S.</h3>More than 5,000 partners in all 50 states working to make every community no-kill.</div>
+  </div>
+
+  <footer>Concept piece for a hypothetical campaign. [Organization name] is a 501(c)(3) nonprofit.</footer>
+</div>
+
+<script>
+const d={"10.95":"Helps provide a soft, washable blanket. That's just three pennies a day for a year.","18.25":"Helps provide a cat bed or resting mat. That's just a nickel a day for a year.","36.50":"Helps provide bedding and enrichment supplies, such as toys or scratchers. That's just a dime a day for a year.","100":"Everything in the $36.50 gift, plus support toward medical care such as vaccinations and checkups.","200":"Everything in the $36.50 gift, plus greater support toward medical care, including treatment for illness or injury.","other":"Every gift, of any size, helps a cat feel a little more at home this Christmas."};
+const desc=document.getElementById('desc'),cta=document.getElementById('cta');
+function pick(b){document.querySelectorAll('.amt').forEach(x=>x.classList.remove('on'));b.classList.add('on');const v=b.dataset.v;desc.textContent=d[v];cta.textContent=v==='other'?'Give today':'Give $'+v+' today';}
+document.querySelectorAll('.amt').forEach(b=>b.onclick=()=>pick(b));
+pick(document.querySelector('.amt.on'));
+</script>
+</body>
+</html>
